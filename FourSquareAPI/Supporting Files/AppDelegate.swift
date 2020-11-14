@@ -1,13 +1,17 @@
 
 import UIKit
-
+import FoursquareAPIClient
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        let CLIENT_ID = "RKDJQWQAVCIU1DTLOPTBKWWXFEFBMRADHQBE4QZ510HNOXRH"
+//        let CLIENT_SECRET = "FH3AOWQL5ZMMB04ONR1JS2EMIOHFELZ0GPOYLWH4KJKPLCEL"
+//        let VERSION = "20201114"
+        
+
         return true
     }
 
