@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FourSquareAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="290" estimatedRowHeight="290" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7c9-W4-EzW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="background"/>
+                                <color key="sectionIndexBackgroundColor" name="background"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" rowHeight="290" id="0jc-OF-bL8" customClass="CategoryCell" customModule="FourSquareAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="290"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0jc-OF-bL8" id="Ysb-FK-XDZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="290"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Venues" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az4-E2-3vQ">
+                                                    <rect key="frame" x="0.0" y="11" width="414" height="25"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                    <color key="textColor" name="yellowaccent"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top trending places near you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-kH-JmL">
+                                                    <rect key="frame" x="0.0" y="37" width="414" height="18"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                                                    <color key="textColor" name="peachy"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wrk-MN-kMK">
+                                                    <rect key="frame" x="0.0" y="71" width="414" height="199"/>
+                                                    <color key="backgroundColor" name="background"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bik-cu-SXE">
+                                                        <size key="itemSize" width="160" height="199"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaceCell" id="Obt-T3-eSD" customClass="PlaceCell" customModule="FourSquareAPI" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="183.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EBc-7M-Uoe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160" height="183.5"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XqL-41-jLH">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="160" id="IAU-2P-QsO"/>
+                                                                            <constraint firstAttribute="height" constant="140" id="IUy-go-r60"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9M-DE-u9K">
+                                                                        <rect key="frame" x="4" y="148" width="152" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="13"/>
+                                                                        <color key="textColor" name="peachy"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance/Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nr-yS-Ji4">
+                                                                        <rect key="frame" x="0.0" y="162" width="160" height="13.5"/>
+                                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="11"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="XqL-41-jLH" firstAttribute="leading" secondItem="EBc-7M-Uoe" secondAttribute="leading" id="5mx-ue-Iff"/>
+                                                                    <constraint firstItem="XqL-41-jLH" firstAttribute="top" secondItem="EBc-7M-Uoe" secondAttribute="top" id="9F3-1a-wZG"/>
+                                                                    <constraint firstItem="Y9M-DE-u9K" firstAttribute="leading" secondItem="EBc-7M-Uoe" secondAttribute="leading" constant="4" id="ElS-Kz-afh"/>
+                                                                    <constraint firstItem="7Nr-yS-Ji4" firstAttribute="leading" secondItem="EBc-7M-Uoe" secondAttribute="leading" id="KJb-F8-SXh"/>
+                                                                    <constraint firstItem="7Nr-yS-Ji4" firstAttribute="top" secondItem="XqL-41-jLH" secondAttribute="bottom" constant="22" id="oKu-3D-Zxl"/>
+                                                                    <constraint firstItem="Y9M-DE-u9K" firstAttribute="top" secondItem="XqL-41-jLH" secondAttribute="bottom" constant="8" symbolic="YES" id="oaE-Kd-SX5"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="7Nr-yS-Ji4" secondAttribute="trailing" id="pMg-l0-w2Z"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Y9M-DE-u9K" secondAttribute="trailing" constant="4" id="vRi-4l-jhR"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="XqL-41-jLH" secondAttribute="trailing" id="wnI-PL-EWe"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="7Nr-yS-Ji4" secondAttribute="bottom" constant="8" id="zir-1n-OUW"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <color key="backgroundColor" name="background"/>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="EBc-7M-Uoe" id="jTZ-SM-Xao"/>
+                                                                <outlet property="locationLabel" destination="7Nr-yS-Ji4" id="Ky7-Ic-cVp"/>
+                                                                <outlet property="nameLabel" destination="Y9M-DE-u9K" id="d4T-I7-FYG"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="BYZ-38-t0r" id="1jr-W6-AsA"/>
+                                                        <outlet property="delegate" destination="BYZ-38-t0r" id="lno-1Y-cWO"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="background"/>
+                                            <constraints>
+                                                <constraint firstItem="Qdb-kH-JmL" firstAttribute="top" secondItem="az4-E2-3vQ" secondAttribute="bottom" constant="1" id="5RR-Wf-A7O"/>
+                                                <constraint firstItem="Qdb-kH-JmL" firstAttribute="top" secondItem="az4-E2-3vQ" secondAttribute="bottom" constant="1" id="672-Zd-wF5"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wrk-MN-kMK" secondAttribute="trailing" id="Ak1-Hd-Mfx"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qdb-kH-JmL" secondAttribute="trailing" id="Bt0-jc-uc1"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wrk-MN-kMK" secondAttribute="bottom" constant="20" symbolic="YES" id="DKS-OK-kdp"/>
+                                                <constraint firstItem="az4-E2-3vQ" firstAttribute="leading" secondItem="Ysb-FK-XDZ" secondAttribute="leading" id="EJf-Go-dge"/>
+                                                <constraint firstItem="Wrk-MN-kMK" firstAttribute="leading" secondItem="Ysb-FK-XDZ" secondAttribute="leading" id="beo-eV-Z3N"/>
+                                                <constraint firstItem="Wrk-MN-kMK" firstAttribute="top" secondItem="Qdb-kH-JmL" secondAttribute="bottom" constant="16" id="ecs-Wn-CgL"/>
+                                                <constraint firstItem="Wrk-MN-kMK" firstAttribute="top" secondItem="Qdb-kH-JmL" secondAttribute="bottom" constant="16" id="sis-V1-0cx"/>
+                                                <constraint firstItem="Qdb-kH-JmL" firstAttribute="leading" secondItem="Ysb-FK-XDZ" secondAttribute="leading" id="u4f-gA-Mlf"/>
+                                                <constraint firstAttribute="trailing" secondItem="az4-E2-3vQ" secondAttribute="trailing" id="voE-KU-hdt"/>
+                                                <constraint firstItem="az4-E2-3vQ" firstAttribute="top" secondItem="Ysb-FK-XDZ" secondAttribute="top" constant="11" id="wxJ-Uy-1Yk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="background"/>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="az4-E2-3vQ" id="Ana-b3-yiT"/>
+                                            <outlet property="collectionView" destination="Wrk-MN-kMK" id="dfZ-2y-5Ob"/>
+                                            <outlet property="descriptionLabel" destination="Qdb-kH-JmL" id="qte-8i-9jl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Hbg-Sm-ANG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="c6Q-Bx-0Vk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="background"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="7c9-W4-EzW" id="ynS-44-aVq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447.82608695652175" y="-150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="background">
+            <color red="0.19599999487400055" green="0.12200000137090683" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="peachy">
+            <color red="0.62699997425079346" green="0.32499998807907104" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yellowaccent">
+            <color red="0.90600001811981201" green="0.62000000476837158" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
