@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  FourSquareAPI
-//
-//  Created by Erin Scully on 11/14/20.
-//
 
 import UIKit
 

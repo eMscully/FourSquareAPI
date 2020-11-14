@@ -1,0 +1,6 @@
+framework module Pods_FourSquareAPI_FourSquareAPIUITests {
+  umbrella header "Pods-FourSquareAPI-FourSquareAPIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
